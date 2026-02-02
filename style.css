@@ -1,0 +1,94 @@
+
+:root {
+    --primary: #1E3A8A;
+    --secondary: #0E77B7;
+    --bg: #ffffff;
+    --card: #F1F5F9;
+    --text: #0F172A;
+    --muted: #64748B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    margin-bottom: 28px;
+}
+
+.header img {
+    width: 110px;
+    margin-bottom: 12px;
+}
+
+.header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.header p {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+/* Links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.link {
+    text-decoration: none;
+    background: var(--card);
+    border: 2px solid transparent;
+    padding: 15px;
+    border-radius: 14px;
+    font-weight: 600;
+    color: var(--text);
+    transition: all 0.25s ease;
+}
+
+.link:hover {
+    border-color: var(--secondary);
+    background: #E0F2FE;
+}
+
+/* Call button */
+.call {
+    background: var(--primary);
+    color: white;
+}
+
+.call:hover {
+    background: var(--secondary);
+}
+
+/* Footer */
+footer {
+    margin-top: 32px;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
